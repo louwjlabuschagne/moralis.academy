@@ -31,8 +31,8 @@ contract Dex is Wallet {
     }
 
     function createLimitOrder(
-        bytes32 _ticker,
         Side _side,
+        bytes32 _ticker,
         uint256 _amount,
         uint256 _price
     ) public {
