@@ -26,7 +26,7 @@ import "../node_modules/@openzeppelin/contracts/utils/math/SafeMath.sol";
 contract MatiesCoin is Context, AccessControlEnumerable, ERC20Burnable, ERC20Pausable {
     bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
     bytes32 public constant PAUSER_ROLE = keccak256("PAUSER_ROLE");
-    bytes32 public constant CAP_ROLE = keccak256("PAUSER_ROLE");
+    bytes32 public constant CAP_ROLE = keccak256("CAP_ROLE");
     uint256 private _cap;
 
     using SafeMath for uint256;
